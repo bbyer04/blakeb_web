@@ -1,2 +1,5 @@
-# Welcome to my personal project #
-This repository contains my personal website.
+## Welcome to my website ##
+
+[Check out my curriculum vitae](https://website-name.com)
+
+Check out my projects
