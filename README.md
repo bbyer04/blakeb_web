@@ -4,4 +4,6 @@
 
 [Check out my projects](https://github.com/blakebyer)
 
+
+### Thank you ###
 &copy; Blake Byer 2024
