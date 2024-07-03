@@ -55,21 +55,24 @@
         border-radius: 5px; /* Rounded corners for the image */
         }
         .button-container {
-            display: flex;
-            justify-content: space-around; /* Spread items evenly */
-            margin-top: 10px; /* Add margin between buttons and other content */
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333; /* Black background */
-            color: #fff; /* White text color */
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    display: flex;
+    justify-content: space-between; /* Spread items evenly across the width */
+    margin-top: 10px; /* Add margin between buttons and other content */
+    }
+
+    .button {
+    padding: 10px 20px;
+    background-color: #333; /* Black background */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; /* Center text */
+    flex: 1; /* Take up equal space */
+    max-width: 200px; /* Limit maximum width of buttons */
+    }
         .button:hover {
             background-color: #555; /* Darker shade on hover */
         }
@@ -82,7 +85,7 @@
         </header>
         <section>
             <img src="profile.jpg" alt="Profile Photo">
-            <p>Hello, I'm Blake Byer. I am a student at the University of Kentucky.</p>
+            <p>Hello, I'm Blake Byer. I am a student at the University of Kentucky. I study neuroscience and computer science.</p>
             <p>Feel free to browse around!</p>
             <a href=https://github.com/blakebyer class="button">Projects</a>
             <a href=curriculum_vitae.pdf class="button">Curriculum Vitae</a>
