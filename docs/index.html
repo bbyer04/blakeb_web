@@ -92,8 +92,14 @@
             <a href=https://www.memreneuro.org/ class="button">memRE</a>
         </section>
         <footer>
-            &copy; Blake Byer 2024
+            &copy; Blake Byer <span id="currentYear"></span>
         </footer>
+    </div>
+
+    <!-- JavaScript to update the current year -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
     </div>
 </body>
 </html>
