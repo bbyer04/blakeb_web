@@ -1,2 +1,2 @@
-# Welcome to my personal project #
-This repository contains my personal website.
+# Blake Byer's Website #
+This repository contains the code for my website. Thanks for visiting.

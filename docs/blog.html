@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake Byer - Home</title>
+    <title>Blake Byer - Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,35 +57,15 @@
         section {
             margin-top: 20px;
         }
-        img {
-            width: 100%;
-            max-width: 300px;
-            display: block;
-            margin: 0 auto;
-            border-radius: 5px;
-        }
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
+        .post {
             margin-bottom: 20px;
         }
-        .button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-align: center;
-            flex: 1;
-            margin: 0 5px;
-            max-width: 200px;
+        .post h2 {
+            margin: 0;
+            font-size: 1.8em;
         }
-        .button:hover {
-            background-color: #555;
+        .post p {
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
@@ -107,28 +87,37 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a <a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                 </ul>
             </nav>
         </header>
-        <section>
-            <img src="profile.jpg" alt="Profile Photo">
-            <p>Hello, I'm Blake Byer. I am a student at the University of Kentucky. I study neuroscience, biology, and computer science.</p>
-            <p>Feel free to browse around!</p>
-            <div class="button-container">
-                <a href="https://github.com/blakebyer" class="button">GitHub</a>
-                <a href="curriculum_vitae.pdf" class="button">Curriculum Vitae</a>
-            </div>
+        <section id="blog-posts">
+            <h1>Blog</h1>
         </section>
         <footer>
             &copy; Blake Byer <span id="currentYear"></span>
         </footer>
     </div>
 
-    <!-- JavaScript to update the current year -->
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        fetch('posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                const blogPostsSection = document.getElementById('blog-posts');
+                posts.forEach(post => {
+                    const postDiv = document.createElement('div');
+                    postDiv.classList.add('post');
+                    postDiv.innerHTML = `
+                        <h2>${post.title}</h2>
+                        <p><em>${post.date}</em></p>
+                        ${post.content}
+                    `;
+                    blogPostsSection.appendChild(postDiv);
+                });
+            })
+            .catch(error => console.error('Error loading posts:', error));
     </script>
 </body>
 </html>
-
