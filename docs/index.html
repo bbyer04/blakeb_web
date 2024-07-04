@@ -80,10 +80,17 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Blake Byer</h1>
-        </header>
-        <section>
+    <header>
+        <h1>Blake Byer</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section id="Home">
+            <h2>Home</h2>
             <img src="profile.jpg" alt="Profile Photo">
             <p>Hello, I'm Blake Byer. I am a student at the University of Kentucky. I study neuroscience, biology, and computer science.</p>
             <p>Feel free to browse around!</p>
@@ -91,6 +98,11 @@
             <a href=curriculum_vitae.pdf class="button">Curriculum Vitae</a>
             <a href=https://www.memreneuro.org/ class="button">memRE</a>
         </section>
+
+            <section id="Blog">
+        <h2>Blog</h2>
+        <p>Content of your blog goes here.</p>
+            </section>
         <footer>
             &copy; Blake Byer <span id="currentYear"></span>
         </footer>
