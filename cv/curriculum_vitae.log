@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.3)  4 JUL 2024 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.3)  26 JUL 2024 13:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -262,11 +262,11 @@ Package hyperref Info: Link coloring ON on input line 11.
 \openout3 = `curriculum_vitae.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 23.
 
 
 [1
@@ -284,15 +284,15 @@ Package rerunfilecheck Info: File `curriculum_vitae.out' has not changed.
 Here is how much of TeX's memory you used:
  9186 strings out of 473904
  143960 string characters out of 5726601
- 1937908 words of memory out of 5000000
+ 1938908 words of memory out of 5000000
  31958 multiletter control sequences out of 15000+600000
  563611 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,338b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bbyer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/bbyer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bbyer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bbyer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bbyer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on curriculum_vitae.pdf (2 pages, 78017 bytes).
+Output written on curriculum_vitae.pdf (2 pages, 80483 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
